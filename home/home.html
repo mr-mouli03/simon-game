@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("../assets/home.png");
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 18px;
+            padding: 30px 40px;
+        }
+
+        .buttons a {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 14px 28px;
+            text-decoration: none;
+
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+
+            transition: all 0.3s ease;
+        }
+
+        .buttons a:hover {
+            background: white;
+            color: #222;
+            border-color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .buttons a:active {
+            transform: scale(0.96);
+        }
+
+        @media (max-width: 600px) {
+            .buttons {
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 20px;
+                gap: 12px;
+            }
+
+            .buttons a {
+                font-size: 16px;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="buttons">
+        <a href="../assets/Simon-Game_Abstract_Watermarked.pdf">Abstract</a>
+        <a href="../index.html">Simon-Game</a>
+    </nav>
+</body>
+</html>

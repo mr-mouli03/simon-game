@@ -26,15 +26,11 @@ startBtn.addEventListener("click", function () {
 function startGame() {
    started = true;
    playerTurn = false;
-
    GameSeq = [];
    UserSeq = [];
    level = 0;
-
    startBtn.style.display = "none";
-
    h2.innerText = "Get Ready!";
-
    levelup();
 }
 
@@ -42,17 +38,13 @@ function playTone(frequency, duration = 150, type = "sine") {
    if (!audioCtx) {
       audioCtx = new (window.AudioContext || window.webkitAudioContext)();
    }
-
    if (audioCtx.state === "suspended") {
       audioCtx.resume();
    }
-
    let oscillator = audioCtx.createOscillator();
    let gainNode = audioCtx.createGain();
-
    oscillator.type = type;
    oscillator.frequency.value = frequency;
-
    oscillator.connect(gainNode);
    gainNode.connect(audioCtx.destination);
 

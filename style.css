@@ -8,15 +8,11 @@ body {
     min-height: 100vh;
     text-align: center;
     font-family: Arial, sans-serif;
-
     background: linear-gradient(135deg, #141e30, #243b55);
-
     color: white;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding-top: 40px;
 }
 
@@ -41,7 +37,7 @@ h2 {
 }
 
 button {
-    font:inherit;
+    font: inherit;
 }
 
 .btn-container {
@@ -119,31 +115,21 @@ button {
 
 #startBtn {
     display: none;
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     z-index: 10;
-
     padding: 15px 35px;
-
     border: 3px solid white;
     border-radius: 15px;
-
     background: #141e30;
     color: white;
-
     font-size: 20px;
     font-weight: bold;
-
     letter-spacing: 2px;
-
     cursor: pointer;
-
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
-
     transition: 0.2s;
 }
 
@@ -194,8 +180,6 @@ button {
     background-color: #ffd0a3;
     box-shadow: 0 0 35px #ffd0a3;
 }
-
-/* Game over */
 
 .game-over {
     background: #8b0000;
